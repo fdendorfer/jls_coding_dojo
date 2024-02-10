@@ -1,0 +1,21 @@
+{
+  "name": "jls_coding_dojo",
+  "version": "1.0.0",
+  "description": "This is a repository for coding dojo excersises. The main goal is to practice problem solving and coding skills. Solutions can focus on a certain metric like efficiency, compactness, creativitiy, etc.",
+  "main": "src/main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/main.js",
+    "start:custom": "node src/main.js --excersise=2 --iterations=1000 --filter=def,nes --debugLogs=true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fdendorfer/jls_coding_dojo.git"
+  },
+  "author": "def",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fdendorfer/jls_coding_dojo/issues"
+  },
+  "homepage": "https://github.com/fdendorfer/jls_coding_dojo#readme"
+}
