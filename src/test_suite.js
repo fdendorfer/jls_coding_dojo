@@ -1,3 +1,9 @@
+/**
+ * Run Tests
+ * @param {{input:any, expectedResult: any}[]} testCases
+ * @param Array lineup - list of contestants
+ * @param iterations {number} - number of times to run the tests
+ */
 export function runTests(testCases, lineup, iterations = 1) {
 	// Runs the tests
 	for (let i = 0; i < iterations; i++) {

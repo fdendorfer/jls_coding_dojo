@@ -1,6 +1,13 @@
 const args = process.argv.slice(2).reduce((acc, a) => {
 	const [key, value] = a.split('=')
-	acc[key.replace('--', '')] = value
+	const configKey = key
+		.replace('--', '')
+		.replace('-e', 'excersise')
+		.replace('-i', 'iterations')
+		.replace('-f', 'filter')
+		.replace('-d', 'debugLogs')
+
+	acc[configKey] = value
 	return acc
 }, {})
 

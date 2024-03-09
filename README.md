@@ -9,7 +9,9 @@ efficiency, compactness, creativitiy, etc.
 1. Clone the repository
 2. Add your solution to the `src/solutions/contestant` folder
 3. Run the main file with `node src/main.js`. Optionally you can add parameters
-to adjust the run configuration (e.g. `node main.js --iterations=100 --filter=def,nes`)
+to adjust the run configuration (e.g. `node src/main.js --iterations=100 --filter=def,nes`).
+
+> See [config.js](src/config.js) for parameter options
 
 ## Folder structure
 
