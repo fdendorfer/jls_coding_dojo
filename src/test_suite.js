@@ -13,7 +13,7 @@ export function runTests(testCases, lineup, iterations = 1) {
 			for (const testCase of testCases) {
 				const output = contestant.solution(testCase.input)
 				// Check if output matches expected result
-				if (!output.sort().every((value, index) => value === testCase.expectedResult[index])) {
+				if (!JSON.stringify(output) === JSON.stringify(testCase.expectedResult)) {
 					contestant.hasFailed = true
 					const testCaseShortString =
 						testCase.input.toString().length > 15
